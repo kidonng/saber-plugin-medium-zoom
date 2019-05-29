@@ -1,0 +1,12 @@
+{
+  "name": "saber-plugin-medium-zoom",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "saber-browser.js"
+  ],
+  "dependencies": {
+    "medium-zoom": "1.0.4"
+  }
+}
