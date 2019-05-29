@@ -1,7 +1,11 @@
-# Saber Plugin `medium-zoom`
+# [medium-zoom](https://github.com/francoischalifour/medium-zoom) for [Saber](https://saber.land)
 
-- Install `yarn add saber-plugin-medium-zoom` or `npm i saber-plugin-medium-zoom`
-- Usage
+## Install
+
+- Yarn `yarn add saber-plugin-medium-zoom`
+- npm `npm i saber-plugin-medium-zoom`
+
+## Usage
 
 ```js
 module.exports = {
@@ -9,6 +13,7 @@ module.exports = {
     {
       resolve: 'saber-plugin-medium-zoom',
       options: {
+        // See https://github.com/francoischalifour/medium-zoom/#api
         selector: '[data-zoomable]',
         option: {
           margin: 24,

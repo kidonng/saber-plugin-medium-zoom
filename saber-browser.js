@@ -1,9 +1,14 @@
-export default function({ router }) {
-  if (process.browser) {
-    const mediumZoom = require('medium-zoom')
+import mediumZoom from 'medium-zoom'
 
-    router.afterEach(function() {
+export default function({ rootOptions, router  }) {
+  if (process.browser) {
+    rootOptions.mounted = function() {
       mediumZoom(__MEDIUM_ZOOM_SELECTOR__, __MEDIUM_ZOOM_OPTIONS__)
-    })
+
+      // Trick: trigger when page has fully loaded
+      router.app.$on('trigger-scroll', function() {
+        mediumZoom(__MEDIUM_ZOOM_SELECTOR__, __MEDIUM_ZOOM_OPTIONS__)
+      })
+    }
   }
 }
