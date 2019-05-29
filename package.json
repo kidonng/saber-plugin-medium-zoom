@@ -1,6 +1,9 @@
 {
   "name": "saber-plugin-medium-zoom",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "medium-zoom for Saber",
+  "author": "kidonng",
+  "license": "MIT",
   "main": "index.js",
   "files": [
     "index.js",
