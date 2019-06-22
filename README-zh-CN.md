@@ -6,18 +6,18 @@
 ![npm](https://img.shields.io/npm/dt/saber-plugin-medium-zoom.svg?style=for-the-badge)
 [![GitHub](https://img.shields.io/github/license/kidonng/saber-plugin-medium-zoom.svg?style=for-the-badge)](./LICENSE)
 
-English | [简体中文](README-zh-CN.md)
+[English](README.md) | 简体中文
 
 </div>
 
-This [Saber](https://saber.land) plugin will add an awesome image zoom library [medium-zoom](https://github.com/francoischalifour/medium-zoom) to your site.
+本 [Saber](https://saber.land) 插件将把一个很棒的图片放大插件 [medium-zoom](https://github.com/francoischalifour/medium-zoom) 添加到你的网站中。
 
-## Install
+## 安装
 
 - npm: `npm i saber-plugin-medium-zoom`
 - Yarn: `yarn add saber-plugin-medium-zoom`
 
-## Usage
+## 使用方法
 
 ```js
 module.exports = {
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: 'saber-plugin-medium-zoom',
       options: {
-        // See https://github.com/francoischalifour/medium-zoom/#api
+        // 参见 https://github.com/francoischalifour/medium-zoom/#api
         selector: '[data-zoomable]',
         option: {
           margin: 24,
