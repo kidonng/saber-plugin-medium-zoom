@@ -1,15 +1,12 @@
 {
   "name": "saber-plugin-medium-zoom",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "medium-zoom for Saber",
   "author": "kidonng",
   "homepage": "https://github.com/kidonng/saber-plugin-medium-zoom#readme",
   "license": "MIT",
   "main": "index.js",
-  "files": [
-    "index.js",
-    "saber-browser.js"
-  ],
+  "files": ["*.js"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kidonng/saber-plugin-medium-zoom.git"
