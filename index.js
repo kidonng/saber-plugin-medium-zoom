@@ -1,18 +1,21 @@
-const path = require('path')
+const { join } = require('path')
 
 const ID = 'medium-zoom'
 
 exports.name = ID
 
-exports.apply = (api, { selector = 'img', option = {} } = {}) => {
-  api.hooks.chainWebpack.tap(ID, config => {
-    config.plugin('constants').tap(([options]) => [
-      Object.assign(options, {
+exports.apply = (
+  { hooks, browserApi },
+  { selector = '[data-zoomable]', options = {} } = {}
+) => {
+  hooks.chainWebpack.tap(ID, config =>
+    config.plugin('constants').tap(([config]) => [
+      Object.assign(config, {
         __MEDIUM_ZOOM_SELECTOR__: JSON.stringify(selector),
-        __MEDIUM_ZOOM_OPTIONS__: option
+        __MEDIUM_ZOOM_OPTIONS__: options
       })
     ])
-  })
+  )
 
-  api.browserApi.add(path.join(__dirname, 'saber-browser.js'))
+  browserApi.add(join(__dirname, 'saber-browser.js'))
 }

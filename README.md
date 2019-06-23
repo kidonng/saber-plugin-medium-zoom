@@ -2,15 +2,14 @@
 
 <div align="center">
 
-[![npm](https://img.shields.io/npm/v/saber-plugin-medium-zoom.svg?style=for-the-badge)](https://npm.im/saber-plugin-medium-zoom)
-![npm](https://img.shields.io/npm/dt/saber-plugin-medium-zoom.svg?style=for-the-badge)
-[![GitHub](https://img.shields.io/github/license/kidonng/saber-plugin-medium-zoom.svg?style=for-the-badge)](./LICENSE)
-
-English | [简体中文](README-zh-CN.md)
+[![Latest version](https://img.shields.io/npm/v/saber-plugin-medium-zoom.svg?style=flat-square)](https://npm.im/saber-plugin-medium-zoom)
+![npm downloads](https://img.shields.io/npm/dt/saber-plugin-medium-zoom.svg?style=flat-square)
+[![License](https://img.shields.io/github/license/kidonng/saber-plugin-medium-zoom.svg?style=flat-square)](LICENSE)
+[![Mentioned in Awesome Saber](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/saberland/awesome-saber)
 
 </div>
 
-This [Saber](https://saber.land) plugin will add an awesome image zoom library [medium-zoom](https://github.com/francoischalifour/medium-zoom) to your site.
+[medium-zoom](https://github.com/francoischalifour/medium-zoom) plugin for [Saber](https://github.com/saberland/saber).
 
 ## Install
 
@@ -19,15 +18,19 @@ This [Saber](https://saber.land) plugin will add an awesome image zoom library [
 
 ## Usage
 
+Add the plugin to your Saber config and we will handle the rest:
+
 ```js
 module.exports = {
+  // ...
   plugins: [
     {
       resolve: 'saber-plugin-medium-zoom',
       options: {
-        // See https://github.com/francoischalifour/medium-zoom/#api
+        // Default selector
         selector: '[data-zoomable]',
-        option: {
+        // See https://github.com/francoischalifour/medium-zoom#options for details
+        options: {
           margin: 24,
           background: '#BADA55',
           scrollOffset: 0,
