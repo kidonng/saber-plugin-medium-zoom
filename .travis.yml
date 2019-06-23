@@ -1,12 +1,15 @@
-dist: xenial
+dist: bionic
 language: node_js
-node_js: node
+node_js: lts/*
 
 if: tag IS present
 
 install: true
+script: true
 
 deploy:
   provider: npm
   email: kidonng@gmail.com
   api_key: $npm_token
+  on:
+    tags: true
