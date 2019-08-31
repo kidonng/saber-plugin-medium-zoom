@@ -1,21 +1,14 @@
 {
   "name": "saber-plugin-medium-zoom",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "medium-zoom plugin for Saber",
+  "license": "MIT",
+  "repository": "kidonng/saber-plugin-medium-zoom",
+  "author": "Kid (https://github.com/kidonng)",
   "main": "index.js",
   "files": [
     "*.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kidonng/saber-plugin-medium-zoom.git"
-  },
-  "author": "kidonng",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kidonng/saber-plugin-medium-zoom/issues"
-  },
-  "homepage": "https://github.com/kidonng/saber-plugin-medium-zoom#readme",
   "dependencies": {
     "medium-zoom": "^1.0.4"
   }
