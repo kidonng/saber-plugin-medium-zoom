@@ -1,20 +1,16 @@
-<h1 align="center">medium-zoom for Saber</h1>
+# `medium-zoom` for Saber
 
-<div align="center">
-
-[![Latest version](https://img.shields.io/npm/v/saber-plugin-medium-zoom.svg?style=flat-square)](https://npm.im/saber-plugin-medium-zoom)
-![npm downloads](https://img.shields.io/npm/dt/saber-plugin-medium-zoom.svg?style=flat-square)
-[![License](https://img.shields.io/github/license/kidonng/saber-plugin-medium-zoom.svg?style=flat-square)](LICENSE)
-[![Mentioned in Awesome Saber](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/saberland/awesome-saber)
-
-</div>
+[![Latest version](https://img.shields.io/npm/v/saber-plugin-medium-zoom.svg)](https://npm.im/saber-plugin-medium-zoom)
+![npm downloads](https://img.shields.io/npm/dt/saber-plugin-medium-zoom.svg)
+[![License](https://img.shields.io/github/license/kidonng/saber-plugin-medium-zoom.svg)](LICENSE)
+[![Mentioned in Awesome Saber](https://awesome.re/mentioned-badge.svg)](https://github.com/saberland/awesome-saber)
 
 [medium-zoom](https://github.com/francoischalifour/medium-zoom) plugin for [Saber](https://github.com/saberland/saber).
 
 ## Install
 
-- npm: `npm i saber-plugin-medium-zoom`
-- Yarn: `yarn add saber-plugin-medium-zoom`
+- `npm i saber-plugin-medium-zoom`
+- `yarn add saber-plugin-medium-zoom`
 
 ## Usage
 

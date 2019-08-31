@@ -1,0 +1,32 @@
+name: Publish
+
+on: create
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 10
+          registry-url: https://registry.npmjs.org/
+      - if: github.event.ref_type == 'tag'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+
+  publish-gpr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 10
+          registry-url: https://npm.pkg.github.com/
+      # Prepend scope to package name
+      - run: sed -i 's/"name":\ "/"name":\ "@kidonng\//' package.json
+      - if: github.event.ref_type == 'tag'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
